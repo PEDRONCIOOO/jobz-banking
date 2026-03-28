@@ -1,0 +1,106 @@
+<h2>Como deve ser a tela de Login?</h2>
+<p class="subtitle">A primeira impressao do app - precisa ser impactante</p>
+
+<div class="cards">
+  <div class="card" data-choice="login-minimal" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%); min-height: 380px; display: flex; align-items: center; justify-content: center; padding: 20px; font-family: system-ui;">
+
+      <div style="width: 240px; display: flex; flex-direction: column; align-items: center;">
+        <!-- Logo -->
+        <div style="margin-bottom: 40px; text-align: center;">
+          <div style="font-size: 32px; font-weight: 800; color: #fff; letter-spacing: -1px;">job<span style="background: linear-gradient(135deg, #6c5ce7, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Z</span></div>
+          <div style="font-size: 10px; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 3px; margin-top: 4px;">banking</div>
+        </div>
+
+        <!-- Form -->
+        <div style="width: 100%; margin-bottom: 12px;">
+          <div style="font-size: 9px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">Email</div>
+          <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 12px 14px; color: rgba(255,255,255,0.3); font-size: 12px;">seu@email.com</div>
+        </div>
+        <div style="width: 100%; margin-bottom: 20px;">
+          <div style="font-size: 9px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">Senha</div>
+          <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 12px 14px; color: rgba(255,255,255,0.3); font-size: 12px;">********</div>
+        </div>
+
+        <div style="width: 100%; background: linear-gradient(135deg, #6c5ce7, #a855f7); border-radius: 12px; padding: 14px; text-align: center; color: #fff; font-size: 13px; font-weight: 600;">Entrar</div>
+        <div style="font-size: 11px; color: rgba(255,255,255,0.3); margin-top: 16px;">Esqueceu a senha?</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A. Minimal Centered</h3>
+      <p>Logo + form centralizado, sem distracao. Foco total na acao. Animacao de entrada suave com fade + slide up nos elementos.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="login-hero" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%); min-height: 380px; display: flex; align-items: center; justify-content: center; padding: 20px; font-family: system-ui;">
+
+      <div style="width: 240px; display: flex; flex-direction: column;">
+        <!-- Hero area -->
+        <div style="margin-bottom: 32px;">
+          <div style="font-size: 32px; font-weight: 800; color: #fff; letter-spacing: -1px; margin-bottom: 4px;">job<span style="background: linear-gradient(135deg, #6c5ce7, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Z</span></div>
+          <div style="font-size: 18px; font-weight: 300; color: rgba(255,255,255,0.6); line-height: 1.4; margin-top: 8px;">Seu dinheiro,<br/><span style="color: #fff; font-weight: 600;">sem limites.</span></div>
+        </div>
+
+        <!-- Glassmorphism card form -->
+        <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 20px; backdrop-filter: blur(20px);">
+          <div style="width: 100%; margin-bottom: 10px;">
+            <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 11px 12px; color: rgba(255,255,255,0.3); font-size: 11px;">seu@email.com</div>
+          </div>
+          <div style="width: 100%; margin-bottom: 14px;">
+            <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 11px 12px; color: rgba(255,255,255,0.3); font-size: 11px;">********</div>
+          </div>
+          <div style="width: 100%; background: linear-gradient(135deg, #6c5ce7, #a855f7); border-radius: 10px; padding: 12px; text-align: center; color: #fff; font-size: 12px; font-weight: 600;">Entrar</div>
+        </div>
+
+        <!-- Bottom decoration -->
+        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+          <div style="width: 40px; height: 3px; border-radius: 2px; background: linear-gradient(90deg, #6c5ce7, transparent);"></div>
+          <div style="width: 40px; height: 3px; border-radius: 2px; background: rgba(255,255,255,0.06);"></div>
+          <div style="width: 40px; height: 3px; border-radius: 2px; background: rgba(255,255,255,0.06);"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B. Hero + Glass Card</h3>
+      <p>Headline impactante no topo, form dentro de glass card. Dots decorativos de carrossel (onboarding feel). Animacao: texto desliza da esquerda, card sobe de baixo.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="login-split" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%); min-height: 380px; display: flex; align-items: center; justify-content: center; padding: 20px; font-family: system-ui;">
+
+      <div style="width: 240px; display: flex; flex-direction: column;">
+        <!-- Top visual area with floating elements -->
+        <div style="position: relative; height: 140px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center;">
+          <!-- Floating orbs -->
+          <div style="position: absolute; width: 80px; height: 80px; border-radius: 50%; background: radial-gradient(circle, rgba(108,92,231,0.3), transparent); top: 10px; left: 20px;"></div>
+          <div style="position: absolute; width: 60px; height: 60px; border-radius: 50%; background: radial-gradient(circle, rgba(168,85,247,0.2), transparent); bottom: 10px; right: 30px;"></div>
+          <div style="position: absolute; width: 100px; height: 100px; border-radius: 50%; background: radial-gradient(circle, rgba(99,102,241,0.15), transparent); top: 30px; right: 10px;"></div>
+          <!-- Logo centered -->
+          <div style="z-index: 1; text-align: center;">
+            <div style="font-size: 38px; font-weight: 800; color: #fff; letter-spacing: -1px;">job<span style="background: linear-gradient(135deg, #6c5ce7, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Z</span></div>
+            <div style="font-size: 9px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 4px; margin-top: 2px;">banking</div>
+          </div>
+        </div>
+
+        <!-- Bottom sheet form -->
+        <div style="background: rgba(255,255,255,0.03); border-radius: 24px 24px 16px 16px; border: 1px solid rgba(255,255,255,0.06); padding: 20px;">
+          <div style="text-align: center; font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 4px;">Bem-vindo de volta</div>
+          <div style="text-align: center; font-size: 10px; color: rgba(255,255,255,0.3); margin-bottom: 16px;">Entre na sua conta</div>
+          <div style="width: 100%; margin-bottom: 8px;">
+            <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 11px 12px; color: rgba(255,255,255,0.3); font-size: 11px;">seu@email.com</div>
+          </div>
+          <div style="width: 100%; margin-bottom: 14px;">
+            <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 11px 12px; color: rgba(255,255,255,0.3); font-size: 11px;">********</div>
+          </div>
+          <div style="width: 100%; background: linear-gradient(135deg, #6c5ce7, #a855f7); border-radius: 10px; padding: 12px; text-align: center; color: #fff; font-size: 12px; font-weight: 600;">Entrar</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C. Floating Orbs + Bottom Sheet</h3>
+      <p>Logo grande com orbs animados flutuando atras (parallax), form sobe como bottom sheet. Animacao: orbs pulsam suavemente, sheet desliza de baixo com spring. Mais imersivo e diferenciado.</p>
+    </div>
+  </div>
+</div>

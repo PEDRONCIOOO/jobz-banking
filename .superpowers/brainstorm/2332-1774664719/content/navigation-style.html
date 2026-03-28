@@ -1,0 +1,155 @@
+<h2>Como navegar entre as telas?</h2>
+<p class="subtitle">Mobile-first - a navegacao precisa ser natural e acessivel com o polegar</p>
+
+<div class="cards">
+  <div class="card" data-choice="nav-bottom-bar" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%); min-height: 320px; display: flex; align-items: flex-end; justify-content: center; padding: 20px; font-family: system-ui;">
+
+      <div style="width: 240px;">
+        <!-- Screen content preview -->
+        <div style="padding: 16px 8px 12px;">
+          <div style="font-size: 13px; color: rgba(255,255,255,0.4);">Ola,</div>
+          <div style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 16px;">Pedro</div>
+
+          <!-- Balance card -->
+          <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 14px; margin-bottom: 16px;">
+            <div style="font-size: 9px; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 1px;">Saldo</div>
+            <div style="font-size: 22px; font-weight: 700; color: #fff; margin-top: 2px;">R$ 12.450,00</div>
+          </div>
+
+          <!-- Placeholder content -->
+          <div style="height: 8px; background: rgba(255,255,255,0.04); border-radius: 4px; width: 60%; margin-bottom: 6px;"></div>
+          <div style="height: 8px; background: rgba(255,255,255,0.03); border-radius: 4px; width: 80%; margin-bottom: 6px;"></div>
+          <div style="height: 8px; background: rgba(255,255,255,0.02); border-radius: 4px; width: 45%;"></div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div style="background: rgba(255,255,255,0.04); border-top: 1px solid rgba(255,255,255,0.06); border-radius: 0 0 16px 16px; padding: 10px 16px; display: flex; justify-content: space-around; align-items: center;">
+          <div style="text-align: center;">
+            <div style="font-size: 18px; color: #a855f7;">&#8962;</div>
+            <div style="font-size: 8px; color: #a855f7; margin-top: 2px;">Home</div>
+          </div>
+          <div style="text-align: center;">
+            <div style="font-size: 18px; color: rgba(255,255,255,0.3);">&#8645;</div>
+            <div style="font-size: 8px; color: rgba(255,255,255,0.3); margin-top: 2px;">Transferir</div>
+          </div>
+          <div style="text-align: center;">
+            <div style="font-size: 18px; color: rgba(255,255,255,0.3);">&#9776;</div>
+            <div style="font-size: 8px; color: rgba(255,255,255,0.3); margin-top: 2px;">Extrato</div>
+          </div>
+          <div style="text-align: center;">
+            <div style="font-size: 18px; color: rgba(255,255,255,0.3);">&#9881;</div>
+            <div style="font-size: 8px; color: rgba(255,255,255,0.3); margin-top: 2px;">Config</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A. Bottom Tab Bar</h3>
+      <p>Padrao mobile classico: Home, Transferir, Extrato, Config. Tab ativa com indicador animado (pill que desliza). Familiar, acessivel, thumb-friendly.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="nav-bottom-fab" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%); min-height: 320px; display: flex; align-items: flex-end; justify-content: center; padding: 20px; font-family: system-ui;">
+
+      <div style="width: 240px; position: relative;">
+        <!-- Screen content preview -->
+        <div style="padding: 16px 8px 12px;">
+          <div style="font-size: 13px; color: rgba(255,255,255,0.4);">Ola,</div>
+          <div style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 16px;">Pedro</div>
+
+          <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 14px; margin-bottom: 16px;">
+            <div style="font-size: 9px; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 1px;">Saldo</div>
+            <div style="font-size: 22px; font-weight: 700; color: #fff; margin-top: 2px;">R$ 12.450,00</div>
+          </div>
+
+          <div style="height: 8px; background: rgba(255,255,255,0.04); border-radius: 4px; width: 60%; margin-bottom: 6px;"></div>
+          <div style="height: 8px; background: rgba(255,255,255,0.03); border-radius: 4px; width: 80%; margin-bottom: 6px;"></div>
+          <div style="height: 8px; background: rgba(255,255,255,0.02); border-radius: 4px; width: 45%;"></div>
+        </div>
+
+        <!-- Bottom bar with FAB -->
+        <div style="background: rgba(255,255,255,0.04); border-top: 1px solid rgba(255,255,255,0.06); border-radius: 0 0 16px 16px; padding: 10px 24px; display: flex; justify-content: space-between; align-items: center; position: relative;">
+          <div style="text-align: center;">
+            <div style="font-size: 18px; color: #a855f7;">&#8962;</div>
+            <div style="font-size: 8px; color: #a855f7; margin-top: 2px;">Home</div>
+          </div>
+          <div style="text-align: center;">
+            <div style="font-size: 18px; color: rgba(255,255,255,0.3);">&#9776;</div>
+            <div style="font-size: 8px; color: rgba(255,255,255,0.3); margin-top: 2px;">Extrato</div>
+          </div>
+
+          <!-- FAB -->
+          <div style="position: absolute; top: -22px; left: 50%; transform: translateX(-50%); width: 48px; height: 48px; background: linear-gradient(135deg, #6c5ce7, #a855f7); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(108,92,231,0.4);">
+            <div style="font-size: 22px; color: #fff; font-weight: 300;">+</div>
+          </div>
+
+          <div style="text-align: center;">
+            <div style="font-size: 18px; color: rgba(255,255,255,0.3);">&#128179;</div>
+            <div style="font-size: 8px; color: rgba(255,255,255,0.3); margin-top: 2px;">Cartoes</div>
+          </div>
+          <div style="text-align: center;">
+            <div style="font-size: 18px; color: rgba(255,255,255,0.3);">&#9881;</div>
+            <div style="font-size: 8px; color: rgba(255,255,255,0.3); margin-top: 2px;">Perfil</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B. Bottom Bar + FAB Central</h3>
+      <p>Tab bar com botao flutuante central para "Nova Transferencia". O FAB abre com animacao radial expandindo opcoes. Destaque visual para a acao principal.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="nav-gesture" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%); min-height: 320px; display: flex; align-items: flex-end; justify-content: center; padding: 20px; font-family: system-ui;">
+
+      <div style="width: 240px;">
+        <!-- Screen content -->
+        <div style="padding: 16px 8px 12px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+            <div>
+              <div style="font-size: 13px; color: rgba(255,255,255,0.4);">Ola,</div>
+              <div style="font-size: 18px; font-weight: 700; color: #fff;">Pedro</div>
+            </div>
+            <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #6c5ce7, #a855f7); display: flex; align-items: center; justify-content: center; font-size: 13px; color: #fff; font-weight: 600;">PT</div>
+          </div>
+
+          <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 14px; margin-bottom: 16px;">
+            <div style="font-size: 9px; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 1px;">Saldo</div>
+            <div style="font-size: 22px; font-weight: 700; color: #fff; margin-top: 2px;">R$ 12.450,00</div>
+          </div>
+
+          <!-- Quick actions row -->
+          <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+            <div style="flex:1; background: linear-gradient(135deg, #6c5ce7, #a855f7); border-radius: 12px; padding: 12px 8px; text-align: center;">
+              <div style="font-size: 14px; color:#fff;">&#8593;</div>
+              <div style="font-size: 8px; color: rgba(255,255,255,0.9); margin-top: 2px;">Transferir</div>
+            </div>
+            <div style="flex:1; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 12px 8px; text-align: center;">
+              <div style="font-size: 14px; color:rgba(255,255,255,0.5);">&#8595;</div>
+              <div style="font-size: 8px; color: rgba(255,255,255,0.4); margin-top: 2px;">Depositar</div>
+            </div>
+            <div style="flex:1; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 12px 8px; text-align: center;">
+              <div style="font-size: 14px; color:rgba(255,255,255,0.5);">&#9776;</div>
+              <div style="font-size: 8px; color: rgba(255,255,255,0.4); margin-top: 2px;">Extrato</div>
+            </div>
+          </div>
+
+          <div style="height: 8px; background: rgba(255,255,255,0.03); border-radius: 4px; width: 60%; margin-bottom: 6px;"></div>
+          <div style="height: 8px; background: rgba(255,255,255,0.02); border-radius: 4px; width: 80%;"></div>
+        </div>
+
+        <!-- Minimal bottom indicator -->
+        <div style="padding: 8px 0 12px; display: flex; justify-content: center;">
+          <div style="width: 100px; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.15);"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C. No Tab Bar — Quick Actions</h3>
+      <p>Sem bottom bar fixo. Navegacao via quick action buttons no dashboard + avatar no topo para perfil. Telas secundarias usam back gesture. Mais limpo, mais espaco para conteudo, feel de app nativo iOS.</p>
+    </div>
+  </div>
+</div>
