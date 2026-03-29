@@ -4,7 +4,7 @@ Aplicação web mobile-first simulando um app bancário digital, construída com
 
 ## Demo
 
-🔗 [Acesse a aplicação](https://jobz-banking.vercel.app)
+🔗 [Acesse a aplicação](https://jobz-bank-test-isw4uf96d-pedronciooos-projects.vercel.app/)
 
 **Credenciais de teste:**
 - Email: `pedro@jobz.com`
